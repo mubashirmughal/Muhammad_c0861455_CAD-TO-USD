@@ -12,58 +12,57 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:text="CAD"
-        android:textSize="30dp"
         android:layout_marginTop="80dp"
-        />
-<EditText
-    android:id="@+id/cad"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_horizontal"
-    android:ems="6"
-    android:textAlignment="center"
-    />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"
-        android:text="USD"
+        android:text="CURENCY CONVERTER"
         android:textSize="30dp"
-        android:layout_marginTop="80dp"
-        />
+        android:textStyle="bold" />
+
     <EditText
-        android:id="@+id/usd"
+        android:id="@+id/cad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
         android:ems="6"
-        android:textAlignment="center"
-        />
+        android:gravity="center_horizontal"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/usdtocad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="USD TO CAD" />
+
+        <RadioButton
+            android:id="@+id/cadtousd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAD TO USD" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#03A9F4"
-        android:text="CONVERT"
         android:layout_marginTop="40dp"
+        android:backgroundTint="#03A9F4"
         android:onClick="convert"
-        />
+        android:text="CONVERT" />
+
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Result"
-        android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:text="Result"
         android:textColor="@color/black"
-        />
-
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
